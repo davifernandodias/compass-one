@@ -17,10 +17,60 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Satoshi regular";
+  src: url("../fonts/Integral-Satoshi-Font-Family/Satoshi-Regular.otf") format("opentype");
+}
 
-
-*{
+* {
   margin: 0;
   padding: 0;
 }
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-white);
+  width: 100%;
+  justify-content: center;
+  height: 4rem;
+}
+.nav-container{
+  display: flex;
+  font-family: "Satoshi regular";
+  padding: 1rem;
+  font-size: 0.8rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  justify-content: center;
 
+  span {
+    text-decoration: underline; font-weight: bold;
+  }
+}
+.header-container {
+  display: flex;
+  font-family: "Integral CF";
+  font-size: 1.5rem;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.header-container-left {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  
+  p {
+    margin-top: -0.4rem;
+  }
+}
+.header-container-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.section-one {
+  background-color: var(--color-gray);
+  height: 100vh;
+}
