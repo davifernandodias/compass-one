@@ -1,3 +1,26 @@
-.container{
-  background-color: black;
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray: #f2f0f1;
+  --first-color-gray-hover: #f0eeed;
 }
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("../fonts/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-bold.otf") format("opentype");
+  font-weight: 800; 
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/Integral-Satoshi-Font-Family/Satoshi-Medium.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
