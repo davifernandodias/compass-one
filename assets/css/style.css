@@ -1,9 +1,3 @@
-:root {
-  --color-black: #000000;
-  --color-white: #ffffff;
-  --color-gray: #f2f0f1;
-  --first-color-gray-hover: #f0eeed;
-}
 
 @font-face {
   font-family: "Integral CF";
@@ -11,66 +5,254 @@
   font-weight: 800; 
   font-style: normal;
 }
+
 @font-face {
   font-family: "Satoshi";
   src: url("../fonts/Integral-Satoshi-Font-Family/Satoshi-Medium.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Satoshi regular";
   src: url("../fonts/Integral-Satoshi-Font-Family/Satoshi-Regular.otf") format("opentype");
 }
 
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray: #f0f0f0;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 .header {
   display: flex;
-  flex-direction: column;
   background-color: var(--color-white);
   width: 100%;
   justify-content: center;
   height: 4rem;
 }
-.nav-container{
+
+.nav-container {
   display: flex;
   font-family: "Satoshi regular";
-  padding: 1rem;
+  width: 100%;
+  padding: 0.75rem;
   font-size: 0.8rem;
   background-color: var(--color-black);
   color: var(--color-white);
   justify-content: center;
+  text-align: center;
 
-  span {
-    text-decoration: underline; font-weight: bold;
-  }
 }
+
+.nav-container span {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.sub-nav {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.nav-container-right {
+  display: none;
+}
+
 .header-container {
   display: flex;
-  font-family: "Integral CF";
-  font-size: 1.5rem;
   align-items: center;
   gap: 1rem;
   justify-content: space-between;
   padding: 1rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
+
+.logo {
+  font-family: "Integral CF";
+  font-size: clamp(1.25rem, 2vw, 2rem);
+}
+
 .header-container-left {
   display: flex;
   gap: 1rem;
   justify-content: center;
-  
-  p {
-    margin-top: -0.4rem;
-  }
+  align-items: center;
 }
+
+.header-container-left p {
+  margin-top: -0.4rem;
+}
+
 .header-container-right {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .section-one {
   background-color: var(--color-gray);
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
+}
+
+.header-items {
+  display: none;
+  align-items: center;
+  font-family: "Satoshi regular";
+  gap: 1rem;
+  color: #000000;
+}
+
+.header-items-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header-item-search {
+  width: 100%;
+  max-width: 42rem;
+}
+
+.input-search {
+  width: 100%;
+  height: 3rem;
+  background-color: var(--color-gray);
+  border-radius: 3.875rem;
+  border: none;
+  background-image: url("../images/search-icon-filter-gray.svg");
+  background-repeat: no-repeat;
+  background-position: 1rem center;
+  background-size: 1.5rem 1.5rem;
+  padding: 0 1rem 0 3rem;
+  font-size: 1rem;
+  
+}
+
+@media (min-width: 640px) {
+  .nav-container {
+    font-size: 0.9rem;
+    padding: 0.875rem;
+  }
+
+  .header {
+    height: 4.5rem;
+  }
+
+  .header-container {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-container {
+    font-size: 0.95rem;
+  }
+
+  .header {
+    height: 5rem;
+  }
+
+  .header-container {
+    padding: 1rem 3rem;
+  }
+
+  .header-items-links {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  
+  .nav-container {
+    font-size: 1rem;
+  }
+
+  .nav-container-right {
+    display: flex;
+  }
+
+  .header {
+    height: 5.5rem;
+  }
+
+  .header-container {
+    padding: 1rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .header-container-left img {
+    display: none;
+  }
+
+  .header-items {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+  }
+
+  .header-container-right .img-search {
+    display: none;
+  }
+
+  .header-items-links {
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header-container {
+    max-width: 1400px;
+  }
+  .logo {
+    margin-left: -2rem;
+  }
+
+  .header-items-links {
+    gap: 3rem;
+    width: 100%;
+  }
+  
+
+  .input-search {
+    width: 36rem;
+  }
+}
+
+@media (min-width: 1625px) {
+  .header-container {
+    max-width: 1600px;
+  }
+
+  .logo {
+    margin-left: -4rem;
+  }
+
+  .input-search {
+    width: 42rem;
+  }
+  
+  .header-items-links {
+    width: 100%;
+  }
 }
