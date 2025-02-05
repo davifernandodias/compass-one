@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Integral CF";
   src: url("../fonts/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-bold.otf") format("opentype");
@@ -48,7 +47,6 @@
   color: var(--color-white);
   justify-content: center;
   text-align: center;
-
 }
 
 .nav-container span {
@@ -65,6 +63,7 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .sub-nav {
   display: flex;
   width: 100%;
@@ -109,12 +108,6 @@
   align-items: center;
 }
 
-.section-one {
-  background-color: var(--color-gray);
-  min-height: 100vh;
-  height: auto;
-}
-
 .header-items {
   display: none;
   align-items: center;
@@ -145,76 +138,209 @@
   background-size: 1.5rem 1.5rem;
   padding: 0 1rem 0 3rem;
   font-size: 1rem;
-  
 }
+
+.section-one-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-text-cf {
+  font-family: "Integral CF";
+  font-size: clamp(2rem, 2vw, 2rem);
+  background-color: red;
+  width: 80%;
+  margin: 1rem;
+}
+
+.sub-title-satoshi {
+  font-family: "Satoshi regular";
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 1rem;
+  background-color: red;
+}
+
+.div-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-color: green;
+}
+
+.btn-shop {
+  width: 22.375rem;
+  height: 3.25rem;
+  border-radius: 3.875rem;
+  font-family: "Satoshi regular";
+  font-size: 1rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.section-one-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+  background-color: red;
+}
+
+.section-one-items-top {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.line-divide {
+  width: 1px;
+  opacity: 20%;
+  height: 4rem;
+  background-color: var(--color-black);
+  border: none;
+}
+
+.line-divide-two {
+  display: none;
+}
+
+.text-description {
+  font-family: "Satoshi regular";
+}
+
+.text-title-description {
+  font-family: "Satoshi";
+}
+
+.image-section-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-image-right {
+  position: relative;
+  top: 6rem;
+  left: 75%;
+}
+
+.start-image-left {
+  position: relative;
+  top: 10rem;
+  left: -10%;
+  width: 3rem;
+}
+
 
 @media (min-width: 640px) {
   .nav-container {
     font-size: 0.9rem;
     padding: 0.875rem;
   }
-
   .header {
     height: 4.5rem;
   }
-
   .header-container {
     padding: 1rem 2rem;
   }
+  .section-one {
+    background-color: green;
+  }
+  .section-one-container {
+    background-color: red;
+  }
+  .title-text-cf {
+    font-family: "Integral CF";
+    font-size: clamp(5rem, 2vw, 2rem);
+    background-color: rgb(14, 63, 224);
+    width: 40%;
+    margin: 6rem 6rem 1rem 6rem;
+  }
+  .sub-title-satoshi {
+    font-family: "Satoshi regular";
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin: 0 6rem 0 6rem;
+    width: 29%;
+    background-color: rgb(25, 194, 166);
+  }
+  .div-button {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin: 1rem 6rem 0 6rem;
+    width: 13.125rem;
+    height: 3.25rem;
+  }
+  .section-one-items {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(184, 184, 219);
+    justify-content: start;
+    margin: 2rem 6rem 0 6rem;
+    gap: 3rem;
+    width: 80%;
+  }
+  .text-title-description {
+    font-size: 2.5rem;
+  }
+  .line-divide-two {
+    display: block;
+    width: 1px;
+    opacity: 20%;
+    height: 4rem;
+    background-color: var(--color-black);
+    border: none;
+  }
+  
 }
 
 @media (min-width: 768px) {
   .nav-container {
     font-size: 0.95rem;
   }
-
   .header {
     height: 5rem;
   }
-
   .header-container {
     padding: 1rem 3rem;
   }
-
   .header-items-links {
     gap: 2rem;
   }
 }
 
 @media (min-width: 1024px) {
-  
   .nav-container {
     font-size: 1rem;
   }
-
   .nav-container-right {
     display: flex;
   }
-
   .header {
     height: 5.5rem;
   }
-
   .header-container {
     padding: 1rem 4rem;
     max-width: 1200px;
     margin: 0 auto;
   }
-
   .header-container-left img {
     display: none;
   }
-
   .header-items {
     display: flex;
     justify-content: flex-end;
     width: 80%;
   }
-
   .header-container-right .img-search {
     display: none;
   }
-
   .header-items-links {
     gap: 2.5rem;
   }
@@ -227,13 +353,10 @@
   .logo {
     margin-left: -2rem;
   }
-
   .header-items-links {
     gap: 3rem;
     width: 100%;
   }
-  
-
   .input-search {
     width: 36rem;
   }
@@ -243,15 +366,12 @@
   .header-container {
     max-width: 1600px;
   }
-
   .logo {
     margin-left: -4rem;
   }
-
   .input-search {
     width: 42rem;
   }
-  
   .header-items-links {
     width: 100%;
   }
