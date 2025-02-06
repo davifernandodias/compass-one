@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Integral CF";
   src: url("../fonts/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-bold.otf") format("opentype");
@@ -48,7 +47,6 @@
   color: var(--color-white);
   justify-content: center;
   text-align: center;
-
 }
 
 .nav-container span {
@@ -65,6 +63,7 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .sub-nav {
   display: flex;
   width: 100%;
@@ -92,27 +91,14 @@
   font-size: clamp(1.25rem, 2vw, 2rem);
 }
 
-.header-container-left {
+.header-container-left,
+.header-container-right {
   display: flex;
   gap: 1rem;
-  justify-content: center;
-  align-items: center;
 }
 
 .header-container-left p {
   margin-top: -0.4rem;
-}
-
-.header-container-right {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.section-one {
-  background-color: var(--color-gray);
-  min-height: 100vh;
-  height: auto;
 }
 
 .header-items {
@@ -145,79 +131,340 @@
   background-size: 1.5rem 1.5rem;
   padding: 0 1rem 0 3rem;
   font-size: 1rem;
-  
+}
+.section-one {
+
+  background-color: var(--color-gray);
+
+}
+.section-one-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(240, 132, 132);
 }
 
-@media (min-width: 640px) {
+.title-text-cf {
+  font-family: "Integral CF";
+  font-size: 36px;
+  width: 80%;
+  margin: 1rem;
+  background-color: beige;
+}
+
+.sub-title-satoshi {
+  font-family: "Satoshi regular";
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin: 1rem;
+  background-color: antiquewhite;
+}
+
+.div-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+.btn-shop {
+  width: 22.375rem;
+  height: 3.25rem;
+  border-radius: 3.875rem;
+  font-family: "Satoshi regular";
+  font-size: 1rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.section-one-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+.section-one-items-top {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 2rem;
+
+}
+
+.line-divide {
+  width: 1px;
+  opacity: 20%;
+  height: 4rem;
+  background-color: var(--color-black);
+  border: none;
+}
+
+.line-divide-two {
+  display: none;
+}
+
+.text-description {
+  font-family: "Satoshi regular";
+}
+
+.text-title-description {
+  font-family: "Satoshi";
+}
+.section-one-content {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  background-color: rgb(154, 204, 204);
+}
+
+
+
+
+
+.image-section-one {
+  justify-content: center;
+  align-items: start; 
+  background-color: red;
+
+}
+
+.image-starts {
+  position: absolute;
+
+}
+.start-image-right {
+  position: relative;
+  top: 2rem;
+  left: 15rem;
+}
+
+
+
+.start-image-left {
+  position: relative;
+  width: 2.75rem;
+  left: 1rem;
+  top: 5rem;
+}
+
+
+.people-image {
+  display: flex;
+  width: 24rem;
+  height: 28rem;
+  background-color: blue;  
+}
+
+
+
+/* Media Queries */
+@media (min-width: 670px) {
   .nav-container {
     font-size: 0.9rem;
-    padding: 0.875rem;
   }
 
+
+  .section-one-container {
+    width: 100%;
+  }
+
+  .image-section-one {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+  } 
   .header {
     height: 4.5rem;
   }
-
   .header-container {
     padding: 1rem 2rem;
   }
+  .section-one-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .section-one-container {
+    height: 100%;
+  }
+ 
+  .title-text-cf {
+    font-family: "Integral CF";
+    text-align: center;
+    font-size: clamp(2.5rem, 4vw, 2rem);
+    width: 80%;
+    background-color: green;
+    margin: 0 4rem 1rem 4rem;
+  }
+  .sub-title-satoshi {
+    font-family: "Satoshi regular";
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+    margin: 0 4rem 0 4rem;
+    width: 80%;
+  }
+  .div-button {
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    align-items: start;
+    margin: 1rem 4rem 0 4rem;
+    width: 80%;
+    height: 3.25rem;
+  }
+  .section-one-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin:  2rem 4rem 0 4rem;
+    gap: 3rem;
+    width: 80%;
+  }
+  .text-title-description {
+    text-wrap: wrap;
+    font-size: 2.5rem;
+  }
+  .line-divide-two {
+    display: block;
+    width: 1px;
+    opacity: 20%;
+    height: 4rem;
+    background-color: var(--color-black);
+    border: none;
+  }
+
+
+.image-section-one {
+  justify-content: center;
+  align-items: start; 
+  background-color: red;
+
+}
+
+.image-starts {
+  position: absolute;
+
+}
+.start-image-right {
+  position: relative;
+  top: 2rem;
+  left: 8rem;
+}
+
+
+
+.start-image-left {
+  position: relative;
+  width: 2.75rem;
+  left: -8rem;
+  top: 10rem;
+}
+
+
+.people-image {
+  display: flex;
+  width: 24rem;
+  height: 30rem;
+  background-color: blue;  
+}
+.section-one-items {
+  display: flex;
+  flex-direction: column;
+}
+.line-divide-two {
+  display: none;
+}
 }
 
 @media (min-width: 768px) {
   .nav-container {
     font-size: 0.95rem;
   }
-
   .header {
     height: 5rem;
   }
-
   .header-container {
     padding: 1rem 3rem;
   }
-
   .header-items-links {
     gap: 2rem;
   }
+  .section-one-content {
+    background-color: red;
+  }
+  .section-one-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(202, 96, 83);
+  }
+
+  .title-text-cf {
+
+    background-color: aliceblue;
+    font-size: clamp(4rem, 4vw, 2rem);
+    width: 80%;
+  }
+
+
 }
 
 @media (min-width: 1024px) {
-  
   .nav-container {
     font-size: 1rem;
   }
-
   .nav-container-right {
     display: flex;
   }
-
   .header {
     height: 5.5rem;
   }
-
   .header-container {
     padding: 1rem 4rem;
     max-width: 1200px;
     margin: 0 auto;
   }
-
   .header-container-left img {
     display: none;
   }
-
   .header-items {
     display: flex;
     justify-content: flex-end;
     width: 80%;
   }
-
   .header-container-right .img-search {
     display: none;
   }
-
   .header-items-links {
     gap: 2.5rem;
   }
+
+  .title-text-cf {
+
+    background-color: aliceblue;
+    font-size: clamp(4rem, 4vw, 2rem);
+    width: 90%;
+  }
+  .sub-title-satoshi {
+    width: 90%;
+  }
+  .div-button {
+    width: 90%;
+  }
+  .section-one-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: pink;
+    width: 90%;
+  }
+  .line-divide-two {
+    display: flex;
+  }
+
 }
 
 @media (min-width: 1280px) {
@@ -227,32 +474,59 @@
   .logo {
     margin-left: -2rem;
   }
-
   .header-items-links {
     gap: 3rem;
     width: 100%;
   }
-  
-
   .input-search {
     width: 36rem;
   }
+  .section-one-content {
+    background-color: rgb(0, 255, 13);
+  }
+
+  .section-one-container {
+    background-color: rgb(1, 79, 82);
+    padding: 1rem 0 0 0;
+  }
+  .title-text-cf {
+    text-align: start;
+    background-color: burlywood;
+    width: 40rem;
+  }
+
+  .sub-title-satoshi {
+    text-align: start;
+    background-color: aqua;
+    width: 35rem;
+  }
+
+  .div-button {
+    justify-content: start;
+  }
+
+  .section-one-items {
+    justify-content: start;
+  }
+
+
 }
 
 @media (min-width: 1625px) {
   .header-container {
     max-width: 1600px;
   }
-
   .logo {
     margin-left: -4rem;
   }
-
   .input-search {
     width: 42rem;
   }
-  
   .header-items-links {
     width: 100%;
   }
+  .section-one-container {
+    gap: 1.5rem;
+  }
+
 }
