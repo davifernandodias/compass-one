@@ -266,16 +266,6 @@
     font-size: 0.9rem;
   }
 
-
-  .section-one-container {
-    width: 100%;
-  }
-
-  .image-section-one {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end; 
-  } 
   .header {
     height: 4.5rem;
   }
@@ -337,46 +327,42 @@
     border: none;
   }
 
-
-.image-section-one {
-  justify-content: center;
-  align-items: start; 
-  background-color: red;
-
-}
+  .image-section-one {
+    display: flex;
+    width: 30rem;
+  }
 
 .image-starts {
-  position: absolute;
-
+  display: flex;
+  justify-content: space-between;
 }
 .start-image-right {
   position: relative;
-  top: 2rem;
-  left: 8rem;
+  top: 5rem;
+  left: 10rem;
 }
-
-
 
 .start-image-left {
   position: relative;
   width: 2.75rem;
-  left: -8rem;
-  top: 10rem;
+  left: -10rem;
+  top: 15rem;
 }
 
 
 .people-image {
   display: flex;
-  width: 24rem;
-  height: 30rem;
+  width: 45rem;
+  height: 40rem;
   background-color: blue;  
 }
 .section-one-items {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
 }
 .line-divide-two {
-  display: none;
+  display: flex;
 }
 }
 
@@ -407,6 +393,10 @@
     background-color: aliceblue;
     font-size: clamp(4rem, 4vw, 2rem);
     width: 80%;
+  }
+
+  .section-one-items {
+    background-color: yellow;
   }
 
 
@@ -441,12 +431,16 @@
   .header-items-links {
     gap: 2.5rem;
   }
-
+  .section-one-container {
+    display: flex;
+    background-color: green;
+  }
   .title-text-cf {
 
     background-color: aliceblue;
     font-size: clamp(4rem, 4vw, 2rem);
     width: 90%;
+    
   }
   .sub-title-satoshi {
     width: 90%;
@@ -482,12 +476,19 @@
     width: 36rem;
   }
   .section-one-content {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+    flex-direction: row;
     background-color: rgb(0, 255, 13);
   }
 
+  
   .section-one-container {
     background-color: rgb(1, 79, 82);
-    padding: 1rem 0 0 0;
+    gap: 1rem;
+
   }
   .title-text-cf {
     text-align: start;
@@ -509,6 +510,17 @@
     justify-content: start;
   }
 
+  .image-section-one {
+    background-color: red;
+    width: 100%;
+  }
+
+  .people-image {
+    display: flex;
+    width: 89%;
+    height: 40rem;
+    background-color: yellow;  
+  }
 
 }
 
@@ -525,8 +537,26 @@
   .header-items-links {
     width: 100%;
   }
-  .section-one-container {
-    gap: 1.5rem;
+
+  .image-section-one {
+    background-color: rgb(0, 255, 221);
+    width: 100%;
   }
+  .start-image-left {
+    left: -15rem;
+    width: 4rem;
+  }
+  .start-image-right {
+    left: 15rem;
+    width: 6rem;
+  }
+  .people-image {
+    display: flex;
+    width: 100%;
+    height: 43rem;
+    background-color: rgb(255, 60, 0);  
+  }
+  
+
 
 }
