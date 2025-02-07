@@ -245,6 +245,30 @@
   }
 }
 
+/* LOGOS */
+
+.logo-mark {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.3rem;
+  background-color: black;
+  height: 7.5rem;
+  padding: 1rem;
+  list-style: none;
+}
+
+.logo-mark img {
+  max-height: 25px;
+}
+.down-logo {
+  max-width: 8rem;
+}
+
+
+
+
 /* Media Queries */
 
 @media (min-width: 480px) {
@@ -321,6 +345,17 @@
       left: -18rem;
       width: 2.5rem;
     }
+  }
+
+  /* LOGOS */
+
+  .logo-mark
+   img {
+    max-height: 120px;
+  }
+  .down-logo {
+    max-height: 100px;
+    max-width: 200px;
   }
 }
 
@@ -450,6 +485,9 @@
       width: 3rem;
     }
   }
+
+
+
 }
 
 @media (min-width: 1410px) {
