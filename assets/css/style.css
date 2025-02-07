@@ -143,7 +143,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(154, 204, 204);
+  background-color: var(--color-gray);
 }
 
 .section-one-container {
@@ -158,7 +158,6 @@
   font-size: 36px;
   width: 80%;
   margin: 1rem;
-  background-color: beige;
 }
 
 .sub-title-satoshi {
@@ -166,7 +165,6 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   margin: 1rem;
-  background-color: antiquewhite;
 }
 
 .div-button {
@@ -267,10 +265,17 @@
     text-align: center;
     font-size: 4rem;
   }
+
+  .sub-title-satoshi {
+    text-align: center;
+  }
   
   .section-one-items{
     display: flex;
     flex-direction: row;
+    .text-title-description {
+      font-size: 2.5rem;
+    }
   }
   
   .line-divide-two {
@@ -300,6 +305,7 @@
   .header-items-links {
     gap: 2rem;
   }
+
 
 
 }
@@ -361,22 +367,32 @@
   }
   
   .section-one-container {
-    display: flex;
-    justify-content: start;
     align-items: start;
-    padding: 1rem;
-    width: 100%;
+    padding: 3rem 5rem 0 2rem;
+    gap: 1rem;
   }
 
   .section-text {
-    display: flex;
     justify-content: start;
     align-items: start;
-    width: 50%;
+    width: 80%;
   }
 
   .title-text-cf {
     text-align: start;
+  }
+  .sub-title-satoshi {
+    text-align: start;
+    width: 65%;
+  }
+  
+  .btn-shop {
+    width: 15rem;
+    height: 3.5rem;
+  }
+
+  .section-one-items {
+    margin-top: 2rem;
   }
  
 }
@@ -399,6 +415,15 @@
   }
 
   /* FIRST SECTION */
+  
+
+  .section-text {
+    width: 60%;
+  }
+
+  .sub-title-satoshi {
+    width: 68%;
+  }
 
 }
 
@@ -408,12 +433,37 @@
     max-width: 1600px;
   }
   .logo {
-    margin-left: -4rem;
+    margin-left: -5rem;
   }
   .input-search {
     width: 42rem;
   }
   .header-items-links {
+    display: flex;
     width: 100%;
   }
+
+  /* FIRST SECTION */
+  .section-one-container {
+    padding: 5rem 5rem 0 7.5rem;
+  }
+
+  .section-text {
+    width: 55%;
+  }
+  
+  .title-text-cf {
+    font-size: 4.5rem;
+  }
+
+  .sub-title-satoshi {
+    width: 56%;
+  }
+  .section-one-items {
+    gap: 5rem;
+  }
+  .section-one-items-top {
+    gap: 5rem;
+  }
+
 }
