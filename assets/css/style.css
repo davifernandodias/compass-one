@@ -384,8 +384,17 @@
   border-radius: 62px;
   border: 1px solid #e4e4e4;
   background-color: white;
+  margin-bottom: 3rem;
 }
 
+.teste {
+  display: flex;
+  justify-content: center;
+}
+.divader-line {
+  width: 90%;
+  border: 1px solid #ecebeb;
+}
 
 /* Media Queries */
 
