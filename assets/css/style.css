@@ -284,7 +284,6 @@
 
 .card-content {
   display: flex;
-  padding-bottom: 1rem;
   width: 100%;
   white-space: nowrap;
 }
@@ -297,6 +296,7 @@
   align-items: center;
   background-color: #fff;
   padding: 0.5rem;
+  gap: 1rem;
   border-radius: 24px;
   width: 15rem;
   flex: 0 0 auto; 
@@ -313,20 +313,39 @@
   overflow: hidden;
 }
 
+.text-amount{
+  font-family: "Satoshi";
+  font-weight: bold;
+}
+
 .card-box img {
   width: 90%;
   object-fit: cover;
 }
 
 .text-card {
+  display: flex;
+  flex-direction: column;
   text-align: start;
-  padding: 1rem;
-}
+  width: 100%;
+  gap: 0.2rem;
+  .text-title-card {
+    font-family: "Satoshi";
+    font-weight: bold;
+
+  }
+  }
+  
 
 .review-card {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  p {
+    font-size: 13px;
+    font-family: "Satoshi regular";
+
+  }
 }
 
 .review-card p span {
@@ -461,6 +480,9 @@
     display: flex;
     justify-content: center;
   }
+
+
+
 }
 
 @media (min-width: 1024px) {
@@ -612,14 +634,19 @@
     display: flex;
     width: 20%;
     .text-card {
-      width: 19rem;
+      width: 95%;
     }
     .card-box {
       width: auto;
       height: 17rem;
     }
   }
-
+  .text-title-card {
+    font-size: 1.1rem;
+  }
+  .text-amount{
+    font-size: 1.2rem;
+  }
 }
 
 @media (min-width: 1625px) {
