@@ -30,6 +30,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden
 }
 
 .nav-container {
@@ -266,7 +267,134 @@
   max-width: 8rem;
 }
 
+.section-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
 
+/* SECTION TWO */
+
+.text-product h1 {
+  width: 100%;
+  margin-top: 2.5rem;
+}
+
+.card-content {
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
+}
+
+
+
+.card-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem;
+  gap: 1rem;
+  border-radius: 24px;
+  width: 15rem;
+  flex: 0 0 auto; 
+
+}
+
+.card-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-gray);
+  width: 100%;
+  height: 13rem;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.text-amount{
+  font-family: "Satoshi";
+  font-weight: bold;
+
+}
+
+.card-box img {
+  width: 90%;
+  object-fit: cover;
+
+}
+
+.text-card {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 100%;
+  gap: 0.2rem;
+
+  
+  .text-title-card {
+    font-family: "Satoshi";
+    font-weight: bold;
+    overflow: hidden;
+
+
+  }
+  }
+  
+
+.review-card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  p {
+    font-size: 13px;
+    font-family: "Satoshi regular";
+
+  }
+}
+
+.review-card p span {
+  margin: 0;
+  color: red;
+}
+.price-content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  overflow: hidden;
+  .text-amount-desconto {
+    font-family: "Satoshi";
+    color: #999999;
+    font-weight: bold;
+    font-size: 1rem;
+    text-decoration: line-through;
+  }
+  .desconto {
+    display: flex;
+    font-family: "Satoshi regular";
+    justify-content: center;
+    align-items: center;
+    background-color: #ffebeb;
+    width: 42px;
+    height: 20px;
+    border-radius: 62px;
+    font-size: 12px;
+    color: #FF3333;
+  }
+}
+
+.btn-view-all {
+  font-family: "Satoshi";
+  width: 22.375rem;
+  height: 2.875rem;
+  border-radius: 62px;
+  border: 1px solid #e4e4e4;
+  background-color: white;
+}
 
 
 /* Media Queries */
@@ -357,6 +485,12 @@
     max-height: 100px;
     max-width: 200px;
   }
+
+  .desconto {
+    width: 58px;
+    height: 28px;
+  }
+
 }
 
 @media (min-width: 768px) {
@@ -386,6 +520,19 @@
       width: 3rem;
     }
   }
+
+
+
+  .card-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-view-all {
+  width: 13.625rem;
+  height: 3.25rem;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -488,6 +635,7 @@
 
 
 
+
 }
 
 @media (min-width: 1410px) {
@@ -529,6 +677,32 @@
       width: 4rem;
     }
   }
+  .card-content {
+    gap: 0.5rem;
+  }
+  .card-items {
+    display: flex;
+    width: 20%;
+    .text-card {
+      width: 95%;
+    }
+    .card-box {
+      width: auto;
+      height: 17rem;
+    }
+  }
+  .text-title-card {
+    font-size: 1.1rem;
+  }
+  .text-amount {
+    font-size: 1.5rem;
+  }
+  .text-amount-desconto {
+    width: auto;
+    height: auto;
+    font-size: 1.5rem !important;
+  }
+
 }
 
 @media (min-width: 1625px) {
@@ -569,4 +743,31 @@
   .section-one-items-top {
     gap: 3rem;
   }
+
+  .card-content {
+    gap: 0.5rem;
+  }
+  .card-items {
+    display: flex;
+    width: 22%;
+    .text-card {
+      width: 100%;
+      padding: 1rem 0 0 0;
+    }
+    .card-box {
+      width: auto;
+      height: 80%;
+      img {
+        width: 25rem;
+        height: 25rem;
+      }
+    }
+  }
+
+  .btn-view-all {
+    width: 17rem;
+    height: 3.5rem;
+    }
+  
+
 }
