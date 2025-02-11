@@ -1,4 +1,10 @@
-@import url("./fonts.css");
+@import url('fonts.css');
+@import url('ui.css');
+@import url('layout.css');
+@import url('tablet.css');
+@import url('desktop.css');
+
+
 
 :root {
   --color-black: #000000;
@@ -530,11 +536,6 @@
 }
 
 /* Media Queries */
-
-@media (min-width: 480px) {
-
-  
-}
 
 @media (min-width: 670px) {
   /* HEADER AND NAV   */
