@@ -1,0 +1,37 @@
+/* Satoshi Font */
+@font-face {
+  font-family: 'Satoshi Medium';
+  src: url('../../public/fonts/Satoshi/Satoshi-Medium.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi Regular';
+  src: url('../../public/fonts/Satoshi/Satoshi-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+/* IntegralCF Font */
+
+@font-face {
+  font-family: 'IntegralCF Medium';
+  src: url('../../public/fonts/IntegralCF/Fontspring-DEMO-integralcf-medium.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IntegralCF Bold';
+  src: url('../../public/fonts/IntegralCF/Fontspring-DEMO-integralcf-bold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IntegralCF Regular';
+  src: url('../../public/fonts/IntegralCF/Fontspring-DEMO-integralcf-regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+
+
