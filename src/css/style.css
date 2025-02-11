@@ -1,29 +1,17 @@
-@font-face {
-  font-family: "Integral CF";
-  src: url("../fonts/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-bold.otf")
-    format("opentype");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Satoshi";
-  src: url("../fonts/Integral-Satoshi-Font-Family/Satoshi-Medium.otf")
-    format("opentype");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Satoshi regular";
-  src: url("../fonts/Integral-Satoshi-Font-Family/Satoshi-Regular.otf")
-    format("opentype");
-}
+@import url("./fonts.css");
 
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
   --color-gray: #f0f0f0;
+
+  --IntegralCF-Regular: 'IntegralCF Regular', sans-serif;
+  --IntegralCF-Medium: 'IntegralCF Medium', sans-serif;
+  --IntegralCF-Bold: 'IntegralCF Bold', sans-serif;
+  
+
+  --Satoshi-Regular: 'Satoshi Regular', sans-serif;
+  --Satoshi-Medium: 'Satoshi Medium', sans-serif;
 }
 
 * {
@@ -33,9 +21,11 @@
   overflow-x: hidden
 }
 
+
+
 .nav-container {
   display: flex;
-  font-family: "Satoshi regular";
+  font-family: var(--Satoshi-Regular);
   width: 100%;
   padding: 0.75rem;
   font-size: 0.8rem;
@@ -103,7 +93,7 @@
 .header-items {
   display: none;
   align-items: center;
-  font-family: "Satoshi regular";
+  font-family: var(--Satoshi-Regular);
   gap: 1rem;
   color: #000000;
 }
@@ -134,7 +124,7 @@
 }
 
 .logo {
-  font-family: "Integral CF";
+  font-family: var(--IntegralCF-Bold);
   font-size: clamp(1.25rem, 2vw, 2rem);
 }
 
@@ -153,14 +143,14 @@
 }
 
 .title-text-cf {
-  font-family: "Integral CF";
+  font-family: var(--IntegralCF-Bold);
   font-size: 36px;
   width: 80%;
   margin: 1rem;
 }
 
 .sub-title-satoshi {
-  font-family: "Satoshi regular";
+  font-family: var(--Satoshi-Regular);
   font-size: 0.875rem;
   line-height: 1.25rem;
   margin: 1rem;
@@ -177,7 +167,7 @@
   width: 22.375rem;
   height: 3.25rem;
   border-radius: 3.875rem;
-  font-family: "Satoshi regular";
+  font-family: var(--Satoshi-Regular);
   font-size: 1rem;
   background-color: var(--color-black);
   color: var(--color-white);
@@ -201,11 +191,11 @@
 }
 
 .text-title-description {
-  font-family: "Satoshi";
+  font-family: var(--Satoshi-Medium);
 }
 
 .text-description {
-  font-family: "Satoshi regular";
+  font-family: var(--Satoshi-Regular);
 }
 
 .line-divide {
@@ -306,7 +296,7 @@
 }
 
 .text-amount{
-  font-family: "Satoshi";
+  font-family: var(--Satoshi-Medium);
   font-weight: bold;
 
 }
@@ -326,7 +316,7 @@
 
   
   .text-title-card {
-    font-family: "Satoshi";
+    font-family: var(--Satoshi-Medium);
     font-weight: bold;
     overflow: hidden;
 
@@ -342,7 +332,7 @@
 
   p {
     font-size: 13px;
-    font-family: "Satoshi regular";
+    font-family: var(--Satoshi-Regular);
 
   }
 }
@@ -357,7 +347,7 @@
   align-items: center;
   overflow: hidden;
   .text-amount-desconto {
-    font-family: "Satoshi";
+    font-family: var(--Satoshi-Medium);
     color: #999999;
     font-weight: bold;
     font-size: 1rem;
@@ -365,7 +355,7 @@
   }
   .desconto {
     display: flex;
-    font-family: "Satoshi regular";
+    font-family: var(--Satoshi-Regular);
     justify-content: center;
     align-items: center;
     background-color: #ffebeb;
@@ -378,7 +368,7 @@
 }
 
 .btn-view-all {
-  font-family: "Satoshi";
+  font-family: var(--Satoshi-Medium);
   width: 22.375rem;
   height: 2.875rem;
   border-radius: 62px;
@@ -401,7 +391,7 @@
   justify-content: center;
 }
 .catalog-title {
-  font-family: "Integral CF";
+  font-family: var(--IntegralCF-Bold);
   font-size: 1.5rem;
   text-align: center;
 }
@@ -475,7 +465,7 @@
 
 .feedback-title {
   background-color: green;
-  font-family: "Integral CF";
+  font-family: var(--IntegralCF-Bold);
   font-size: 32px;
   white-space: normal;
   padding: 2.5rem 0 1rem 1rem;
@@ -519,7 +509,7 @@
 .feedback-card {
   display: flex;
   flex-direction: column;
-  font-family: "Satoshi";
+  font-family: var(--Satoshi-Medium);
   gap: 1rem;
   padding: 1rem;
   min-width: 23rem;
@@ -705,7 +695,19 @@
     max-width: 50%;
   }
 
+.feedback-card {
+  display: flex;
+  width: 25rem;
+  height: 15rem;
+  .card-title {
+    font-size: 20px;
+  }
+  .card-description {
+    font-size: 16px;
+  }
+}
 
+  
   
 
 
