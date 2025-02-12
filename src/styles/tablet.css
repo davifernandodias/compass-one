@@ -1,50 +1,19 @@
-@media (min-width: 1024px) {
-  #dropdownMenu {
-    display: flex;
-  }
-  #inputSearch {
-    display: flex;
-  }
+@media (min-width: 768px) {
 
   #searchIcon {
     display: none;
   }
-  #activeSideBar {
-    display: none;
-    background-color: red;
-  }
-
-
-
-
 
   .navbar {
     height: 5rem;
   }
   
-  .sidebar-logo {
-    display: flex;
-    justify-content: end;
-    align-items: center;
+  .sidebar-logo { 
     height: 100%;
     .logo {
+      margin-top: -0.2rem;
       font-size: 2.3rem;
     }
-  }
-
-  .dropdown-menu {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    font-size: 1rem;
-    color: var(--color-black);
-    font-family: var(--Satoshi-Regular);
-
-  }
-  .signup-alert {
-    font-size: 15px;
-  
-  
   }
   
 }

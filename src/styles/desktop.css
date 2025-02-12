@@ -1,0 +1,41 @@
+@media (min-width: 1024px) {
+  #dropdownMenu {
+    display: flex;
+  }
+  #inputSearch {
+    display: flex;
+  }
+
+  #activeSideBar {
+    display: none;
+    background-color: red;
+  }
+
+
+
+
+  .sidebar-logo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    .logo {
+      font-size: 2.3rem;
+    }
+  }
+
+  .dropdown-menu {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1rem;
+    color: var(--color-black);
+    font-family: var(--Satoshi-Regular);
+
+  }
+  .signup-alert {
+    font-size: 15px;
+  
+  
+  }
+  
+}
