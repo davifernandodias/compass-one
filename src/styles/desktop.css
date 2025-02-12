@@ -11,15 +11,19 @@
     background-color: red;
   }
 
-
-
+  #signUpIconExit {
+    display: flex;
+  }
 
   .sidebar-logo {
     display: flex;
     justify-content: end;
     align-items: center;
     .logo {
+      display: flex;
+      justify-content: end;
       font-size: 2.3rem;
+      margin-right: 1rem;
     }
   }
 
@@ -33,9 +37,60 @@
 
   }
   .signup-alert {
+    display: flex;
+    justify-content: center;
     font-size: 15px;
-  
-  
+    .signup-content {
+      display: flex;
+      width: 70%;
+      justify-content: space-between;
+    }
+    .signup-title {
+      display: flex;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+    .signup-exit {
+      justify-content: end;
+    }
   }
-  
+
+  .home-content {
+    background-color: yellow;
+    width: 50%;
+    max-width: 60%;
+    align-items: start;
+    .home-text {
+      align-items: start ;
+      width: 100%;
+      
+      background-color: rgb(207, 207, 207);
+
+      .home-title {
+        text-align: start;
+        width: 90%;
+        max-width: 30rem;
+
+        background-color: aquamarine;
+      }
+      .home-description {
+        background-color: beige;
+        text-align: start;
+        width: 100% !important;
+        max-width: 30rem;
+      }
+    
+    }
+    .home-information {
+      display: flex;
+      width: 100%;
+      align-items: start;
+      button {
+        width: 210px;
+        height: 52px;
+      }
+    }
+    
+  }
 }

@@ -3,7 +3,14 @@ export function Header() {
 return `
   <header>
       <section class="signup-alert">
-          <p>Sign up and get 20% off to your first order. <a href="">Sign Up Now</a></p>
+        <div class="signup-content">
+        <div class="signup-title">
+            <p>Sign up and get 20% off to your first order. <a href="">Sign Up Now</a></p>
+        </div>
+        <div class="signup-exit" id="signUpIconExit">
+            <img src="../../public/images/icons/signup-exit.svg" alt="x-icon" />
+        </div>
+        </div>
       </section>
       <nav class="navbar">
           <div class="sidebar-logo">
