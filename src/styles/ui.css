@@ -3,30 +3,46 @@
   display: none; /* disabled on mobile */
 }
 /* Botões */
-.btn-shop {
-  width: 22.375rem;
-  height: 3.25rem;
-  border-radius: 3.875rem;
-  font-family: var(--Satoshi-Regular);
-  font-size: 1rem;
+.button-common {
+  font-family: var(--Satoshi-Medium);
   background-color: var(--color-black);
   color: var(--color-white);
+  width: 358px;
+  height: 52px;
+  border: none;
+  border-radius: 62px;
 }
 
-.nav-search {
-  display: flex;
-  justify-content: end;
-  width: 40%;
+
+  
   .input-search {
-    width: 100%;
+    width: 45%;
     height: 48px;
+    font-family: var(--Satoshi-Regular);
+    font-size: 1rem;
     border-radius: 62px;
-    border: none;
-    background-color: var(--color-gray);
+    border: 2px solid transparent;
     background-image: url("../../public/images/icons/sidebar_search_icon.svg");
-    padding: 0 1rem 0 3rem;
     background-repeat: no-repeat;
     background-position: 1rem center;
+    padding: 0 1rem 0 3rem;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    
+    background-color: var(--color-gray);
+    box-shadow: 0px 4px 6px var(--color-gray);
+
+    &:focus {
+      width: 46%; 
+      background-color: #fff;
+      border: 2px solid var(--color-gray); 
+      box-shadow: 0px 4px 12px var(--color-white); 
+    }
+
+    &:hover {
+      box-shadow: 0px 4px 10px var(--color-white)
+    }
   }
-}
+
+
 
