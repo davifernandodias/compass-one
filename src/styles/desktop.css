@@ -5,15 +5,25 @@
   #inputSearch {
     display: flex;
   }
+  
+  #signUpIconExit {
+    display: flex;
+  }
 
   #activeSideBar {
     display: none;
     background-color: red;
   }
 
-  #signUpIconExit {
-    display: flex;
+  #bannerMobileModels {
+    display: none !important;
   }
+
+
+  #searchIcon {
+    display: none;
+  }
+
 
   .sidebar-logo {
     display: flex;
@@ -56,26 +66,40 @@
     }
   }
 
+  #home-section {
+    display: flex;
+    background-image: url(../../public/images/banners/home-banner-models-desktop.svg);
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: bottom;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden !important;
+  }
+
   .home-content {
-    background-color: yellow;
-    width: 50%;
-    max-width: 60%;
+    width: 100%;
+    margin: 0 !important;
     align-items: start;
+    padding: 0 0 0 7rem;
+    overflow-x: hidden !important;
     .home-text {
       align-items: start ;
-      width: 100%;
-      
-      background-color: rgb(207, 207, 207);
+      width: 100% !important;
 
       .home-title {
+        display: flex;
         text-align: start;
-        width: 90%;
-        max-width: 30rem;
+        width: 100% !important;
+        max-width: 35rem;
+        min-width: 30rem;
+        font-size: 64px !important;
+        overflow: hidden;
 
-        background-color: aquamarine;
+        
       }
       .home-description {
-        background-color: beige;
         text-align: start;
         width: 100% !important;
         max-width: 30rem;
@@ -84,13 +108,58 @@
     }
     .home-information {
       display: flex;
-      width: 100%;
-      align-items: start;
+      width: 100% !important;
+      align-items: start !important;
+      overflow: hidden;
+      justify-content: start !important;
       button {
         width: 210px;
         height: 52px;
       }
+      .home-container-data {
+        justify-content: start !important;
+        overflow: hidden;
+        width: 100%;
+        max-width: 35rem;
+        min-width: 30rem;
+
+        .home-information-acount {
+          text-align: start;
+        }
+      }
+      .home-information-sub-data {
+        width: 25% !important;
+      }
     }
     
   }
+  .banner-mobile-models {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .banner-mobile {
+      width: 100%;
+      height: 100%;
+    }
+
+    .home-banner-star-left {
+      position: absolute;
+      left: 53vw !important;
+      top: 30vh !important;
+      width: 3rem;
+    }
+    .home-banner-star-right {
+      position: absolute;
+      top: 5vh;
+      left: 90vw !important;
+    }
+  }
 }
+
+
+@media (min-width: 1564px) {
+  .home-banner-star-right {
+    margin-left: -15rem;
+  }
+}
+

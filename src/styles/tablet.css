@@ -1,7 +1,51 @@
+@media (min-width: 540px) {
+
+  .home-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .home-text {
+      align-items: center;
+
+      .home-title {
+        max-width: 40rem;
+        font-size: 3rem !important;
+      }
+      .home-description {
+        width: 70% !important;
+      }
+    }
+    .home-information {
+      display: flex;
+      width: 100%;
+      justify-content: center !important;
+      align-items: center;
+      .home-container-data {
+        display: flex;
+        width: 100%;
+        align-items: center !important;
+        justify-content: center !important;
+        
+        align-items: center;
+      }
+
+    }
+  }
+  .banner-mobile-models {
+    .home-banner-star-right {
+      position: absolute;
+      left: 85vw !important;
+    }
+  }
+
+}
+
+
+
 @media (min-width: 768px) {
 
-  #searchIcon {
-    display: none;
+  #divider-two {
+    display: flex;
   }
 
   .navbar {
@@ -13,6 +57,37 @@
     .logo {
       margin-top: -0.2rem;
       font-size: 2.3rem;
+    }
+  }
+
+  .home-information {
+    align-items: center;
+    .home-container-data {
+      flex-direction: row !important;
+    }
+    .home-container-data {
+      gap: 0 !important;
+      
+    }
+    .home-information-data {
+      text-align: center !important;
+    }
+    .home-information-sub-data {
+      width: 10rem !important;
+    }
+  }
+  
+  .banner-mobile-models {
+    .home-banner-star-left {
+      position: absolute;
+      left: 10vw !important;
+      top: 110vh !important;
+    }
+    .home-banner-star-right {
+      top: 70vh;
+      width: 5rem;
+      position: absolute;
+      left: 89vw !important;
     }
   }
   

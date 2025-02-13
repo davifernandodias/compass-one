@@ -1,6 +1,12 @@
 /* HEADER */
 
-#dropdownMenu{
+#dropdownMenu {
+  display: none; /* disabled on mobile */
+}
+#divider-two {
+  display: none; /* disabled on mobile */
+}
+#signUpIconExit {
   display: none; /* disabled on mobile */
 }
 
@@ -26,32 +32,120 @@
   padding: 1rem;
   height: 4rem;
   overflow: hidden;
-    .sidebar-logo {
+  .sidebar-logo {
+    display: flex;
+    gap: 1rem;
+    width: 18rem;
+
+    img {
+      width: 1.6rem;
+    }
+  }
+  .logo {
+    font-family: var(--IntegralCF-Medium);
+    width: 100%;
+    height: 100%;
+    margin-top: -0.5rem;
+    font-size: 2rem;
+  }
+  .navbar-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 6.5rem;
+    background-size: cover;
+  }
+}
+
+#home-section {
+  background-color: var(--color-gray);
+  .home-content {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    gap: 2rem;
+    .home-text {
       display: flex;
       gap: 1rem;
-      width: 18rem;
-
-      img {
-        width: 1.6rem;
+      flex-direction: column;
+      .home-title {
+        font-family: var(--IntegralCF-Bold);
+        font-size: 2.5rem;
+      }
+      .home-description {
+        font-family: var(--Satoshi-Regular);
+        color: var(--color-gray-text);
+        width: 22rem;
+        font-size: 14px;
       }
     }
-    .logo {
-      font-family: var(--IntegralCF-Medium);
-      width: auto;
-      height: 100%;
-      margin-top: -0.5rem;
-      font-size: 2rem;
-    }
-    .navbar-icons {
+
+    .home-information {
       display: flex;
+      flex-direction: column;
+      justify-content: start;
       align-items: center;
-      gap: 0.5rem;
-      width: 6.5rem;
+      gap: 2rem;
+      .home-container-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        text-align: center;
+        flex-wrap: wrap;
+
+        gap: 2rem;  
+      }
+      .home-information-data {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        text-align: start;
+        .divider-one {
+          color: var(--color-gray-text);
+          margin-top: -1rem;
+        }
+      }
+      .home-information-sub-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 19rem;
+      }
+      .home-information-acount {
+        font-family: var(--Satoshi-Medium);
+      }
+      .home-information-description {
+        font-family: var(--Satoshi-Regular);
+        font-size: 13px;
+        color: var(--color-gray-text);
+      }
+
     }
+
+  }
+
+  .banner-mobile-models {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    .banner-mobile {
+      width: 100%;
+      height: 100%;
+    }
+
+    .home-banner-star-left {
+      position: absolute;
+      left: 2vw;
+      top: 100vh;
+      width: 3rem;
+    }
+    .home-banner-star-right {
+      position: absolute;
+      left: 75vw;
+    }
+  }
+  
 }
-
-.home-section {
-  background-color: var(--color-gray);
-}
-
-

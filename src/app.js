@@ -1,9 +1,9 @@
-import { Banner } from "./components/banner.js";
+import { Home } from "./components/home.js";
 import { renderPage } from "./render.js";
 
 function render() {
   renderPage(`
-    ${Banner()}
+    ${Home()}
   `);
 }
 
