@@ -38,6 +38,15 @@
     }
   }
 
+  .logo-brands {
+    img {
+      max-height: 15rem;
+    }
+    .logo-down {
+      max-width: 15rem;
+    }
+  }
+
 }
 
 
