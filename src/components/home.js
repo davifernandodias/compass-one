@@ -2,7 +2,7 @@ import { Button } from "./ui/button.js";
 
 export function Home() {
   return `
-  <section id="home-section">
+  <section id="homeSection">
     <div class="home-content">
       <div class="home-text">
         <h1 class="home-title">

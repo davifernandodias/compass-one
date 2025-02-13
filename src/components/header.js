@@ -2,7 +2,7 @@ import { Input } from "./ui/input.js";
 export function Header() { 
 return `
   <header>
-      <section class="signup-alert">
+      <section class="signupAlert">
         <div class="signup-content">
         <div class="signup-title">
             <p>Sign up and get 20% off to your first order. <a href="">Sign Up Now</a></p>
