@@ -14,7 +14,13 @@
 }
 
 .button-view-all {
-  
+  font-family: var(--Satoshi-Medium);
+  width: 80%;
+  border: 1px solid var(--color-gray);
+  background-color: transparent;
+  border-radius: 62px;
+  height: 46px;
+  margin-bottom: 4rem;
 }
 
 

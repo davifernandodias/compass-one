@@ -68,7 +68,7 @@
 
   #homeSection {
     display: flex;
-    background-image: url(../../public/images/banners/home_banner_models_desktop.svg);
+    background-image: url(../../public/images/banners/home_banner_models_desktop.webp);
     height: 650px;
     background-repeat: no-repeat;
     background-position: right;

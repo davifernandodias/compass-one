@@ -23,7 +23,9 @@ export function Products(title, products) {
             ${productList.map(product => cardProduct(product)).join("")}
           </div>
         </div>
-        ${Button()}
+        <div class="area-button-view-all">
+          ${Button("View All", "button-view-all")}
+        </div>
       </section>
     `;
   } catch (err) {

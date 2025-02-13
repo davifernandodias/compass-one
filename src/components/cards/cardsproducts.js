@@ -16,7 +16,8 @@ export function cardProduct(product) {
         </div>
         <div class="product-price">
           <p class="product-price-text">$${product.productPrice}</p>
-          ${product.productCommonPrice ? `<p class="product-common-price">$${product.productCommonPrice}</p>` : ""}
+          ${
+            product.productCommonPrice ? `<p class="product-common-price">$${product.productCommonPrice}</p>` : ""}
           ${product.productDiscount ? `<p class="product-discount">${product.productDiscount}% OFF</p>` : ""}
         </div>
       </div>

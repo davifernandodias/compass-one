@@ -5,7 +5,6 @@
 @import url('desktop.css');
 
 
-
 :root {
   --color-black: #000000;
   --color-white: #ffffff;
@@ -38,6 +37,7 @@
 }
 
 #productsSection {
-  background-color: green;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }

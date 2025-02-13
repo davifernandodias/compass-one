@@ -9,9 +9,8 @@ function render() {
     ${Home()}
     ${BaseBoard()}
     ${Products("NEW ARRIVALS", productTypeArrivals)}
-    <hr/>
+    <hr class="divider"/>
     ${Products("TOP SELLING", productTypeSelling)}
-
   `);
 }
 

@@ -165,11 +165,9 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  background-color: yellow;
   .product-section-title {
     display: flex;
     justify-content: center;
-    background-color: red;
     width: 100% ;
     font-family: var(--IntegralCF-Medium);
     font-size: 44px;
@@ -223,4 +221,11 @@
       gap: 1rem;
     }
   }
+}
+.area-button-view-all {
+  display: flex;
+  justify-content: center;
+}
+.divider {
+  width: 60%;
 }
