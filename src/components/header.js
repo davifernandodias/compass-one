@@ -8,7 +8,7 @@ return `
             <p>Sign up and get 20% off to your first order. <a href="">Sign Up Now</a></p>
         </div>
         <div class="signup-exit" id="signUpIconExit">
-            <img src="../../public/images/icons/signup-exit.svg" alt="x-icon" />
+            <img src="../../public/images/icons/signup_exit.svg" alt="x-icon" />
         </div>
         </div>
       </section>
@@ -22,7 +22,7 @@ return `
                   Shop
                   <span>
                   <img
-                    src="./public/images/active-sidebar-icon.svg"
+                    src="./public/images/icons/sidebar_shop_modal_icon.svg"
                     alt="active-sidebar"
                     />
                   </span>

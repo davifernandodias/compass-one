@@ -38,9 +38,9 @@ export function Home() {
       </div>
       </div>
       <div class="banner-mobile-models">
-          <img src="../../public/images/banners/star/home-star.svg" class="home-banner-star-left" alt="star-left"/>
-          <img src="../../public/images/banners/star/home-star.svg" class="home-banner-star-right" alt="star-right"/>
-          <img src="../../public/images/banners/home-banner-molds-mobile.svg" alt="home-banner-mobile-models" class="banner-mobile"  id="bannerMobileModels" />
+          <img src="../../public/images/banners/star/home_star.svg" class="home-banner-star-left" alt="star-left"/>
+          <img src="../../public/images/banners/star/home_star.svg" class="home-banner-star-right" alt="star-right"/>
+          <img src="../../public/images/banners/home_banner_molds_mobile.svg" alt="home-banner-mobile-models" class="banner-mobile"  id="bannerMobileModels" />
       </div>
   </section>
   `;
