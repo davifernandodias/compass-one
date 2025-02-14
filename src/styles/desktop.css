@@ -154,6 +154,12 @@
       left: 90vw !important;
     }
   }
+
+  .product-content {
+  
+    width: 90% !important;
+  }
+
 }
 
 

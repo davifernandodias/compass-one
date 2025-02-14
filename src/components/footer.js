@@ -1,6 +1,6 @@
 export function Footer() {
   return `
-    <footer class="footer">
+    <footer>
       <h1>Bem-vindo à Página!</h1>
       <nav>
         <ul>
