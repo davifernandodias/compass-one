@@ -8,17 +8,19 @@ export function cardProduct(product) {
         <p class="product-name">${product.productName}</p>
         <div class="product-specifications">
           <div class="stars">
-            ${"★".repeat(Math.round(product.productFeedBack))} ${"☆".repeat(5 - Math.round(product.productFeedBack))}
+            ${`<img src="../../public/images/clothes/product_star.webp ">`
+              .repeat(Math.floor(product.productFeedBack))}
+            ${ Number.isInteger(Number(product.productFeedBack)) ? ""  :`<img src="../../public/images/clothes/product_star_partition.webp" />`}
           </div>
           <div class="product-feedback">
-            <p><span class="product-feedback-color">${product.productFeedBack}</span></p>
+            <p>${product.productFeedBack}<span class="product-feedback-color">/5</span></p>
           </div>
         </div>
-        <div class="product-price">
+        <div class="product-prices">
           <p class="product-price-text">$${product.productPrice}</p>
           ${
             product.productCommonPrice ? `<p class="product-common-price">$${product.productCommonPrice}</p>` : ""}
-          ${product.productDiscount ? `<p class="product-discount">${product.productDiscount}% OFF</p>` : ""}
+          ${product.productDiscount ? `<p class="product-discount">-${product.productDiscount}%</p>` : ""}
         </div>
       </div>
     </div>
