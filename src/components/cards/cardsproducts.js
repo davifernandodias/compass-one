@@ -2,15 +2,15 @@ export function cardProduct(product) {
   return `
     <div class="product-items">
       <div class="product-item">
-        <img src="../../public/images/clothes/${product.productNameImage}" alt="${product.productName} class="product-image"">
+        <img src="../../assets/images/clothes/${product.productNameImage}" alt="${product.productName} class="product-image"">
       </div>
       <div class="product-description">
         <p class="product-name">${product.productName}</p>
         <div class="product-specifications">
           <div class="stars">
-            ${`<img src="../../public/images/clothes/product_star.webp ">`
+            ${`<img src="../../assets/images/clothes/product_star.webp ">`
               .repeat(Math.floor(product.productFeedBack))}
-            ${ Number.isInteger(Number(product.productFeedBack)) ? ""  :`<img src="../../public/images/clothes/product_star_partition.webp" />`}
+            ${ Number.isInteger(Number(product.productFeedBack)) ? ""  :`<img src="../../assets/images/clothes/product_star_partition.webp" />`}
           </div>
           <div class="product-feedback">
             <p>${product.productFeedBack}<span class="product-feedback-color">/5</span></p>
