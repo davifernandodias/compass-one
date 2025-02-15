@@ -1,4 +1,5 @@
 import { BaseBoard } from "./components/baseboard.js";
+import { Catalog } from "./components/catalog.js";
 import { Home } from "./components/home.js";
 import { Products } from "./components/product.js";
 import { renderPage } from "./render.js";
@@ -13,6 +14,7 @@ function render() {
       <hr class="divider"/>
     </div>
     ${Products("TOP SELLING", productTypeSelling)}
+    ${Catalog()}
   `);
 }
 

@@ -24,6 +24,22 @@
   margin-bottom: 4rem;
 }
 
+.button-common,
+.button-view-all {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button-common:hover {
+  background-color: rgba(0, 0, 0, 0.795);
+}
+
+.button-view-all:hover {
+  transform: scale(1.02);
+}
+
+
+
 
   
   .input-search {
