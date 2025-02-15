@@ -300,6 +300,7 @@
 
 .catalog-cards {
   display: flex;
+  font-family: var(--Satoshi-Medium);
   flex-direction: column;
   justify-content: center;
   align-items: center;

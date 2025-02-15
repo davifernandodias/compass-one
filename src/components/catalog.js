@@ -13,17 +13,17 @@ export function Catalog() {
                   <img src="assets/images/catalog/catalog_person_white_gray.webp" alt="Casual">
                 </div>
                 <div class="catalog-card card-second">
-                  <h1>Casual</h1>
+                  <h1>Formal</h1>
                   <img src="assets/images/catalog/catalog_person_blaze.webp" alt="Formal">
                 </div>
               </div>
               <div class="catalog-item">
                 <div class="catalog-card card-third">
-                  <h1>Casual</h1>
+                  <h1>Party</h1>
                   <img src="assets/images/catalog/catalog_person_woman.webp"  alt="Party">
                 </div>
                 <div class="catalog-card card-four">
-                  <h1>Casual</h1>
+                  <h1>Gym</h1>
                   <img src="assets/images/catalog/catalog_person_gym.webp" alt="Gym">
                 </div>
               </div>
