@@ -221,4 +221,51 @@
     font-size: 48px;
   }
 
+  footer {
+    padding: 5rem;
+    background-color: var(--color-gray);
+    
+      #footerSection {
+        display: flex ;
+        flex-direction: row ;
+        gap: 4.5rem;
+      }
+
+        .info-socials {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            
+            h6 {
+                font-size: 33.45px;
+            }
+
+            p {
+                font-size: 14px;
+                width: 100%;
+                max-width: 20rem;
+            }
+
+            .info-socials-icons {
+                display: flex;
+                gap: 1rem; /* Espaçamento entre os ícones */
+                align-items: center;
+            }
+        }
+    
+
+    .rodape-items {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 1rem;
+
+        .rodape-badges {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
 }
