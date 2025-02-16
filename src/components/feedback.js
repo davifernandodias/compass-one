@@ -14,7 +14,7 @@ export function Feedback() {
         </div>
         <div class="feedback-items">
           <div class="feedback-cards">
-          ${feedbackData.map((feedback) => cardFeedback(feedback.name, feedback.description))}
+          ${feedbackData.map((feedback) => cardFeedback(feedback.name, feedback.description)).join("")}
           </div>
         </div>
       </div>

@@ -429,3 +429,111 @@
   }
 }
 
+
+
+
+/* Footer */
+
+
+
+  .info-socials {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+  
+      h6 {
+          font-family: var(--IntegralCF-Medium);
+          font-size: 28.8px;
+      }
+  
+      p {
+          font-family: var(--Satoshi-Regular);
+          font-size: 14px;
+          color: rgba(0, 0, 0, 0.60);
+      }
+
+      .info-socials-icons {
+          display: flex;
+          gap: 12px;
+          margin-bottom: 24.4px;
+
+          .circulo-icon {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 28px;
+              height: 28px;
+              border-radius: 28px;
+              border: 1px solid rgba(0, 0, 0, 0.20);
+          }
+          .facebook {
+            background-color: black;
+            color: white;
+          }
+          
+          .circulo-icon:hover {
+              background-color: var(--color-black);
+              
+              .path-hover {
+                  fill: white;
+              }
+          }
+      }
+  }
+
+  .info-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .info-links-company {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          width: auto;
+          margin-bottom: 24px;
+
+          h6 {
+              font-family: var(--Satoshi-Medium);
+              font-size: 14px;
+              line-height: 18px;
+              letter-spacing: 3px;
+          }
+
+          a {
+              text-decoration: none;
+              font-family: var(--Satoshi-Regular);
+              font-size: 14px;
+              color: rgba(0, 0, 0, 0.60);
+          }
+      }
+  }
+
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-gray);
+  gap: 16px;
+
+  hr {
+      width: 90vw;
+      border: 1px solid rgba(0, 0, 0, 0.10);
+  }
+
+  .rodape-badges {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 25px;
+  }
+
+  p {
+      display: flex;
+      justify-content: center;
+      font-family: var(--Satoshi-Regular);
+      font-size: 14px;
+  }
+
+}

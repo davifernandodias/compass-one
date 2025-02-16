@@ -158,6 +158,22 @@
   
     width: 90% !important;
   }
+
+  .info-links {
+    width: 80%;
+    display: flex;
+    gap: 4rem;
+    .info-links-company {
+      width: 100%;
+      h6 {
+        font-size: 16px;
+        overflow-y: hidden;
+      }
+      a {
+        font-size: 16px;
+      }
+    }
+  }
 }
 
 
