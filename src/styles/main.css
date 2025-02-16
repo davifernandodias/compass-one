@@ -43,4 +43,10 @@
   gap: 3rem;
 }
 
+#feedbackSection {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 
