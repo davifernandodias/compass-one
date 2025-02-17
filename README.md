@@ -14,10 +14,6 @@ This is a simple landing page project, using good responsiveness practices such 
 - **CSS**: Styling and responsive design.
 - **JavaScript**: Logic for the dynamic creation of components and interactivity.
 
-## Project Structure
-
-The project is organized as follows:
-
 ## How to execute 
 
 `` git clone "url or ssh" ``
