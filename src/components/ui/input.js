@@ -1,9 +1,9 @@
-export function Input(placeholder, type, identifier) {
+export function Input(type = "text", placeholder, className, identifier) {
   return `
           <input
-            type="text"
+            type=${type}
             placeholder="${placeholder}"
-            class="${type}"
+            class="${className}"
             id="${identifier}"
           />
   `;

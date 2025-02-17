@@ -2,9 +2,8 @@ import {
   Home, BaseBoard, Products,
   Catalog, Feedback,
   productTypeArrivals, productTypeSelling,
-  renderPage, 
-} from "./utils/index.js" 
-
+  renderPage, setupEmailValidation 
+} from "./utils/index.js";
 
 function render() {
   renderPage(`
@@ -18,6 +17,8 @@ function render() {
     ${Catalog()}
     ${Feedback()}
   `);
+
+  setupEmailValidation(); // Chama a função após renderizar a página
 }
 
 window.onload = render;

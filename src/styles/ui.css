@@ -100,20 +100,47 @@
     padding: 0 1rem 0 3rem;
     transition: all 0.3s ease-in-out;
     outline: none;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ajustando sombra para suavidade */
-  
-    &:focus {
-      width: 46%;
-      background-color: #fff;
-      border: 2px solid var(--color-gray);
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-    }
-  
-    &:hover {
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    }
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
   
+.email-validation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: var(--Satoshi-Medium);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+.email-validation.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.input-email-incorrect, .input-email-correct {
+  display: none; /* Mantém oculto por padrão */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.input-email-incorrect.show, .input-email-correct.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.input-email-incorrect {
+  color: red;
+}
+
+.input-email-correct {
+  color: rgb(64, 255, 47);
+}
+
 
 
 

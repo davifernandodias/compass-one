@@ -1,4 +1,4 @@
-import { feedbackData } from "../utils/feedbackData.js";
+import { feedbackData } from "../utils/data/feedbackData.js";
 import { cardFeedback } from "./cards/cardsfeedback.js";
 
 export function Feedback() {

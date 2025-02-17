@@ -31,7 +31,7 @@ return `
               <li>New Arrivals</li>
               <li>Brands</li>
           </ul>
-              ${Input( "Search for products...", "input-search", "inputSearch" )}
+              ${Input( "text","Search for products...", "input-search", "inputSearch" )}
           <div class="navbar-icons">
               <!-- Search Icon -->
               <svg id="searchIcon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
