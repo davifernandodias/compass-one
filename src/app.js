@@ -2,7 +2,7 @@ import {
   Home, BaseBoard, Products,
   Catalog, Feedback,
   productTypeArrivals, productTypeSelling,
-  renderPage, setupEmailValidation 
+  renderPage, setupEmailValidation, initFeedbackSlider 
 } from "./utils/index.js";
 
 function render() {
@@ -19,6 +19,7 @@ function render() {
   `);
 
   setupEmailValidation(); 
+  initFeedbackSlider();
 }
 
 window.onload = render;

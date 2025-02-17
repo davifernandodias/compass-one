@@ -364,11 +364,23 @@
   justify-content: flex-end;
   gap: 1rem;
   padding: 1rem;
+  cursor: pointer;
 }
 
 .feedback-arrow-right {
   transform: rotate(180deg);
 }
+
+.feedback-arrow-left:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.feedback-arrow-right:hover {
+  transform: scale(1.1) rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+
 
 .feedback-images img {
   width: 2rem;
@@ -395,6 +407,7 @@
   scroll-behavior: smooth;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
+  transition: transform 0.5s ease-in-out;
 }
 
 
@@ -415,7 +428,11 @@
   height: 12rem;
   border: 1px solid var(--color-gray);
   border-radius: 1.25rem;
-
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1);
+  .feedback-card:hover {
+    transform: scale(1.05);
+  }
   .card-title {
     display: flex;
     font-size: 1rem;
@@ -425,6 +442,7 @@
   .card-description {
     font-size: 0.875rem;
   }
+  
 }
 
 

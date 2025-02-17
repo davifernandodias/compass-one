@@ -1,5 +1,6 @@
 import { feedbackData } from "../utils/data/feedbackData.js";
 import { cardFeedback } from "./cards/cardsfeedback.js";
+import { initFeedbackSlider } from "../utils/scrollingCardFeedback.js"
 
 export function Feedback() {
   return `
@@ -14,10 +15,11 @@ export function Feedback() {
         </div>
         <div class="feedback-items">
           <div class="feedback-cards">
-          ${feedbackData.map((feedback) => cardFeedback(feedback.name, feedback.description)).join("")}
+          ${feedbackData.map((feedback) => cardFeedback(feedback.name, feedback.description,feedback.id )).join("")}
           </div>
         </div>
       </div>
     </section>
+    
   `;
 }

@@ -7,9 +7,11 @@ import { Products } from "../components/product.js";
 import { renderContent, renderPage } from "../render.js";
 import { productTypeArrivals, productTypeSelling } from "./data/productsData.js";
 import { setupEmailValidation } from "./validator/emailValidator.js"
+import { initFeedbackSlider } from "./scrollingCardFeedback.js"
 export { 
   BaseBoard, Catalog, Feedback, 
   Footer, Home, productTypeArrivals,
   productTypeSelling, Products,
-  renderContent, renderPage, setupEmailValidation
+  renderContent, renderPage, setupEmailValidation,
+  initFeedbackSlider
 }

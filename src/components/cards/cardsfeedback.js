@@ -1,6 +1,6 @@
-export function cardFeedback(name, description) {
+export function cardFeedback(name, description, id) {
   return `
-    <div class="feedback-card">
+    <div class="feedback-card" id=${`feedback_card_${id} `}>
       <div class="card-stars">
       ${`<img src="assets/images/clothes/product_star.webp" alt="Five stars rating" class="card-emoji"/>`.repeat(5)}
       </div>
