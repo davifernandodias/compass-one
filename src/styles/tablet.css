@@ -86,6 +86,9 @@
       backdrop-filter: blur(1.5px);
       -webkit-backdrop-filter: blur(1.5px);
     }
+    .newlatter-content {
+      text-align: center;
+    }
 
 
 }
@@ -221,14 +224,13 @@
     font-size: 48px;
   }
 
-  footer {
-    padding: 5rem;
-    background-color: var(--color-gray);
+
     
       #footerSection {
         display: flex ;
         flex-direction: row ;
         gap: 4.5rem;
+        padding: 7rem 3rem 3rem 5rem !important;
       }
 
         .info-socials {
@@ -260,6 +262,7 @@
         justify-content: space-between;
         width: 100%;
         padding: 1rem;
+        padding: 2rem 5.5rem 2rem 5.5rem;
 
         .rodape-badges {
             display: flex;
@@ -268,4 +271,4 @@
     }
 }
 
-}
+
