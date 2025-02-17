@@ -1,6 +1,13 @@
+import { Newsletter } from "./newsletter.js";
+
 export function Footer() {
   return `
   <footer>
+    <div class="news-content">
+        <div class="news-items">
+            ${Newsletter()}
+        </div>
+    </div>
         <section id="footerSection">
             <section class="info-socials">
                 <h6>SHOP.CO</h6>
