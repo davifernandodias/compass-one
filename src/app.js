@@ -18,7 +18,7 @@ function render() {
     ${Feedback()}
   `);
 
-  setupEmailValidation(); // Chama a função após renderizar a página
+  setupEmailValidation(); 
 }
 
 window.onload = render;
