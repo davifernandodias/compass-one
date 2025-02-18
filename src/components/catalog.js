@@ -1,6 +1,6 @@
 export function Catalog() {
   return `
-             <section class="catalog-section">
+             <section id="catalogSection">
         <div class="catalog-content">
           <div class="catalog-title">
             <h1>BROWSE BY DRESS STYLE</h1>

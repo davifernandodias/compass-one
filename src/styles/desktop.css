@@ -24,7 +24,22 @@
     display: none;
   }
 
+  #signUpIconExit {
+    cursor: pointer;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(0); 
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%); 
+      opacity: 0;
+    }
+  }
 
+  
   .sidebar-logo {
     display: flex;
     justify-content: end;
@@ -44,9 +59,25 @@
     font-size: 1rem;
     color: var(--color-black);
     font-family: var(--Satoshi-Regular);
-
+    cursor: pointer;
   }
-  .signupAlert {
+  
+  .dropdown-item {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .dropdown-item:hover {
+    color: rgb(128, 114, 114);
+  }
+
+  .dropdown-icon:hover {
+    transform: rotate(90deg);
+  }
+
+  
+
+  
+  #signupAlert {
     display: flex;
     justify-content: center;
     font-size: 15px;

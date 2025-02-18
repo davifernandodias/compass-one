@@ -10,18 +10,7 @@
   display: none; /* disabled on mobile */
 }
 
-.signupAlert {
-  display: flex;
-  justify-content: center;
-  font-family: var(--Satoshi-Medium);
-  font-size: 13px;
-  background-color: var(--color-black);
-  padding: 1rem;
-  color: var(--color-white);
-  a {
-    color: white;
-  }
-}
+
 
 .navbar {
   display: flex;
@@ -54,6 +43,110 @@
     background-size: cover;
   }
 }
+
+
+
+.navbar-exit-animation {
+  animation: slideUp 0.5s ease-in-out forwards;
+}
+.sidebar-container-active {
+  position: fixed;
+  background-color: var(--color-black);
+  top: 0;
+  left: -250px; 
+  width: 250px;
+  height: 100vh;
+  padding: 3rem;
+  z-index: 4;
+  transition: left 0.3s ease-out; 
+  animation: slideIn 0.5s ease-out forwards; 
+
+  a {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+
+  .sidebar-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1rem;
+    .sidebar-title {
+      font-size: 2rem;
+      font-family: var(--IntegralCF-Bold);
+    }
+    .sidebar-sub-title {
+      font-family: var(--Satoshi-Medium);
+      transition: all 0.3s ease-in-out; /
+    }
+    .sidebar-sub-title:hover {
+      color: var(--primary-color);
+      background-color: var(--prime-color); 
+      transform: translateX(10px); 
+      border-radius: 4px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+  }
+}
+
+@keyframes slideIn {
+  from {
+    left: -250px; 
+  }
+  to {
+    left: 0; 
+  }
+}
+
+.sidebar-container-disabled {
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0; 
+  width: 250px;
+  height: 100vh;
+  padding: 3rem;
+  z-index: 4;
+  transition: left 0.3s ease-out;
+  animation: slideOut 0.5s ease-out forwards; 
+
+  a {
+    color: var(--color-white);
+    text-decoration: none;
+  }
+
+  .sidebar-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1rem;
+    .sidebar-title {
+      font-size: 2rem;
+      font-family: var(--IntegralCF-Bold);
+    }
+    .sidebar-sub-title {
+      font-family: var(--Satoshi-Medium);
+      transition: all 0.3s ease-in-out; 
+    }
+    .sidebar-sub-title:hover {
+      color: var(--primary-color); 
+      background-color: var(--prime-color);
+      transform: translateX(10px);
+      border-radius: 4px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+  }
+}
+
+@keyframes slideOut {
+  from {
+    left: 0; 
+  }
+  to {
+    left: -250px; 
+  }
+}
+
 
 .home-content {
   display: flex;
@@ -276,10 +369,7 @@
 }
 
 
-.catalog-section {
-  display: flex;
-  justify-content: center;
-}
+
 .catalog-title {
   font-family: var(--IntegralCF-Medium);
   font-size: 1.5rem;
