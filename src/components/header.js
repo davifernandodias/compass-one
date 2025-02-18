@@ -2,7 +2,7 @@ import { Input } from "./ui/input.js";
 export function Header() { 
 return `
   <header>
-      <section class="signupAlert">
+      <section id="signupAlert">
         <div class="signup-content">
         <div class="signup-title">
             <p>Sign up and get 20% off to your first order. <a href="">Sign Up Now</a></p>
@@ -18,18 +18,13 @@ return `
               <p class="logo">SHOP.CO</p>
           </div>
           <ul class="dropdown-menu" id="dropdownMenu">
-              <li>
+              <li class="dropdown-item">
                   Shop
-                  <span>
-                  <img
-                    src="assets/images/icons/sidebar/sidebar_shop_modal_icon.svg"
-                    alt="active-sidebar"
-                    />
-                  </span>
+                  <span class="dropdown-icon"> > </span>
               </li>
-              <li>On Sale</li>
-              <li>New Arrivals</li>
-              <li>Brands</li>
+              <li class="dropdown-item">On Sale</li>
+              <li class="dropdown-item">New Arrivals</li>
+              <li class="dropdown-item">Brands</li>
           </ul>
               ${Input( "text","Search for products...", "input-search", "inputSearch" )}
           <div class="navbar-icons">

@@ -1,12 +1,15 @@
 import { 
   Home, BaseBoard, Products,
-  Catalog, Feedback,
+  Catalog, Feedback, Sidebar,
   productTypeArrivals, productTypeSelling,
-  renderPage, setupEmailValidation, initFeedbackSlider 
+  renderPage, setupEmailValidation, initFeedbackSlider,
+  initialRemoveNavabarSignUp, initialActiveSidebar, 
+  state, setRenderCallback
 } from "./utils/index.js";
 
 function render() {
   renderPage(`
+    <div id="sidebarContainer">${Sidebar(state.isActive)}</div>
     ${Home()}
     ${BaseBoard()}
     ${Products("NEW ARRIVALS", productTypeArrivals)}
@@ -20,6 +23,10 @@ function render() {
 
   setupEmailValidation(); 
   initFeedbackSlider();
+  initialRemoveNavabarSignUp();
+  initialActiveSidebar();
 }
+
+setRenderCallback(render);
 
 window.onload = render;

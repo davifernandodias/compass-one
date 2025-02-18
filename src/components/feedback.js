@@ -1,6 +1,6 @@
 import { feedbackData } from "../utils/data/feedbackData.js";
 import { cardFeedback } from "./cards/cardsfeedback.js";
-import { initFeedbackSlider } from "../utils/scrollingCardFeedback.js"
+import { initFeedbackSlider } from "../utils/helpers/scrollingCardFeedback.js"
 
 export function Feedback() {
   return `

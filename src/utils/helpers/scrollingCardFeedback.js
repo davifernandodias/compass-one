@@ -1,5 +1,4 @@
 export function initFeedbackSlider() {
-  console.log("oi");
 
   const feedbackCards = document.querySelector(".feedback-cards");
   const leftArrow = document.querySelector(".feedback-arrow-left");
@@ -8,24 +7,22 @@ export function initFeedbackSlider() {
 
   if (!feedbackCards || !leftArrow || !rightArrow || cards.length === 0) return;
 
-  let currentIndex = 2; // Inicializa com o card do meio (id: 3, índice 2)
+  let currentIndex = 2;
 
   function updateCardsOrder() {
-    // Adiciona a classe para a animação
+
     feedbackCards.classList.add("transitioning");
 
-    // Atualiza a ordem dos cards com base no índice
     cards.forEach((card, index) => {
       if (index === (currentIndex - 1 + cards.length) % cards.length) {
-        card.style.order = 1; // Card de cima
+        card.style.order = 1; 
       } else if (index === currentIndex) {
-        card.style.order = 2; // Card do meio
+        card.style.order = 2; 
       } else if (index === (currentIndex + 1) % cards.length) {
-        card.style.order = 3; // Card de baixo
+        card.style.order = 3; 
       }
     });
 
-    // Remove a classe de transição após o tempo da animação
     setTimeout(() => {
       feedbackCards.classList.remove("transitioning");
     }, 500);
@@ -34,7 +31,6 @@ export function initFeedbackSlider() {
   rightArrow.addEventListener("click", () => {
     console.log("direita");
 
-    // Passa o card de baixo para o de cima
     currentIndex = (currentIndex + 1) % cards.length;
 
     updateCardsOrder();
@@ -43,15 +39,12 @@ export function initFeedbackSlider() {
   leftArrow.addEventListener("click", () => {
     console.log("esquerda");
 
-    // Passa o card de cima para o de baixo
     currentIndex = (currentIndex - 1 + cards.length) % cards.length;
 
     updateCardsOrder();
   });
 
-  // Inicializa com a posição correta dos cards
   updateCardsOrder();
 
-  // Estilo de transição para a animação
   feedbackCards.style.transition = "transform 0.5s ease-in-out";
 }
