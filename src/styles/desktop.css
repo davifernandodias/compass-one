@@ -60,19 +60,27 @@
     color: var(--color-black);
     font-family: var(--Satoshi-Regular);
     cursor: pointer;
+    background-color: red;
   }
   
   .dropdown-item {
     transition: color 0.3s ease, transform 0.3s ease;
   }
   
-  .dropdown-item:hover {
-    color: rgb(128, 114, 114);
-  }
+.dropdown-item:hover {
+  color: rgb(128, 114, 114);
+}
 
-  .dropdown-icon:hover {
-    transform: rotate(90deg);
-  }
+.dropdown-item:hover .dropdown-icon {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out; 
+}
+
+
+.dropdown-icon {
+  display: inline-block; 
+  transition: transform 0.3s ease-in-out;
+}
 
   
 

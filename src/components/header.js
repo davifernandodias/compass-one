@@ -17,15 +17,16 @@ return `
               <img src="assets/images/icons/sidebar/sidebar_icon.svg" alt="sidebar_icon" id="activeSideBar">
               <p class="logo">SHOP.CO</p>
           </div>
-          <ul class="dropdown-menu" id="dropdownMenu">
-              <li class="dropdown-item">
-                  Shop
-                  <span class="dropdown-icon"> > </span>
-              </li>
-              <li class="dropdown-item">On Sale</li>
-              <li class="dropdown-item">New Arrivals</li>
-              <li class="dropdown-item">Brands</li>
-          </ul>
+            <ul class="dropdown-menu" id="dropdownMenu">
+                <li class="dropdown-item">
+                    Shop
+                    <span class="dropdown-icon"> > </span>
+                </li>
+                <li class="dropdown-item">On Sale</li>
+                <li class="dropdown-item">New Arrivals</li>
+                <li class="dropdown-item">Brands</li>
+            </ul>
+
               ${Input( "text","Search for products...", "input-search", "inputSearch" )}
           <div class="navbar-icons">
               <!-- Search Icon -->
