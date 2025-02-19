@@ -1,7 +1,5 @@
 import { Sidebar } from "../index.js";
 
-let renderCallback = null;
-
 const state = {
   isActive: false,
   setIsActive(value) {
@@ -15,6 +13,9 @@ const state = {
     }
   }
 };
+
+let renderCallback = null;
+
 
 export function initialActiveSidebar() {
   const iconIsActive = document.getElementById("activeSideBar");
