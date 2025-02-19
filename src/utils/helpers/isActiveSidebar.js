@@ -19,6 +19,10 @@ const state = {
 export function initialActiveSidebar() {
   const iconIsActive = document.getElementById("activeSideBar");
   const sidebarContainer = document.getElementById("sidebarContainer");
+  const dropdownIcon = document.querySelector('.dropdown-icon');
+  const dropIcon = document.getElementById('dropIcon');
+  const subDropdownMenu = document.getElementById('subDropdownMenu');
+
 
   if (!iconIsActive || !sidebarContainer) return;
 
@@ -26,6 +30,32 @@ export function initialActiveSidebar() {
     event.stopPropagation(); 
     state.setIsActive(!state.isActive);
   });
+ const checkScreenSize = () => {
+  if (window.innerWidth < 1024) {
+    subDropdownMenu.style.display = 'none';
+  }
+};
+
+checkScreenSize();
+
+window.addEventListener('resize', checkScreenSize);
+
+dropIcon.addEventListener('mouseenter', () => {
+  if (window.innerWidth >= 1024) { 
+    console.log('Mouse está sobre o ícone');
+    subDropdownMenu.style.display = 'flex'; 
+  }
+});
+
+document.addEventListener('click', (event) => {
+  if (
+    !subDropdownMenu.contains(event.target) && 
+    !dropdownIcon.contains(event.target) 
+  ) {
+    console.log('Clicou fora do submenu');
+    subDropdownMenu.style.display = 'none'; 
+  }
+});
 
   document.addEventListener("click", (event) => {
     const isClickInsideSidebar = sidebarContainer.contains(event.target);

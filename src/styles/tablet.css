@@ -251,7 +251,7 @@
 
             .info-socials-icons {
                 display: flex;
-                gap: 1rem; /* Espaçamento entre os ícones */
+                gap: 1rem; 
                 align-items: center;
             }
         }
