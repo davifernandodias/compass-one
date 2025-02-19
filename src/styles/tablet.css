@@ -172,6 +172,10 @@
     flex-wrap: wrap;
     padding: 1rem;
   }
+  .catalog-title {
+    font-size: 46px;
+    padding-top: 3rem;
+  }
   
   .catalog-items {
     display: flex;
