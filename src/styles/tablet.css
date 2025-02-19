@@ -99,6 +99,8 @@
 
   #divider-two {
     display: flex;
+    color: #dad8d9;
+    opacity: 40%;
   }
 
   .navbar {
