@@ -1,4 +1,4 @@
-import { Sidebar } from "../index.js"; 
+import { Sidebar } from "../index.js";
 
 let renderCallback = null;
 
@@ -23,52 +23,52 @@ export function initialActiveSidebar() {
   const dropIcon = document.getElementById('dropIcon');
   const subDropdownMenu = document.getElementById('subDropdownMenu');
 
-
-  if (!iconIsActive || !sidebarContainer) return;
+  if (!iconIsActive || !sidebarContainer || !dropdownIcon || !dropIcon || !subDropdownMenu) {
+    return;
+  }
 
   iconIsActive.addEventListener("click", (event) => {
     event.stopPropagation(); 
     state.setIsActive(!state.isActive);
   });
- const checkScreenSize = () => {
-  if (window.innerWidth < 1024) {
-    subDropdownMenu.style.display = 'none';
-  }
-};
 
-checkScreenSize();
+  const checkScreenSize = () => {
+    if (window.innerWidth < 1024) {
+      subDropdownMenu.style.display = 'none';
+    }
+  };
 
-window.addEventListener('resize', checkScreenSize);
+  checkScreenSize();
 
-dropIcon.addEventListener('mouseenter', () => {
-  if (window.innerWidth >= 1024) { 
-    console.log('Mouse está sobre o ícone');
-    subDropdownMenu.style.display = 'flex'; 
-  }
-});
+  window.addEventListener('resize', checkScreenSize);
 
-document.addEventListener('click', (event) => {
-  if (
-    !subDropdownMenu.contains(event.target) && 
-    !dropdownIcon.contains(event.target) 
-  ) {
-    console.log('Clicou fora do submenu');
-    subDropdownMenu.style.display = 'none'; 
-  }
-});
+  dropIcon.addEventListener('mouseenter', () => {
+    if (window.innerWidth >= 1024) { 
+      console.log('Mouse está sobre o ícone');
+      subDropdownMenu.style.display = 'flex'; 
+    }
+  });
+
+  document.addEventListener('click', (event) => {
+    if (
+      !subDropdownMenu.contains(event.target) && 
+      !dropdownIcon.contains(event.target) 
+    ) {
+      console.log('Clicou fora do submenu');
+      subDropdownMenu.style.display = 'none'; 
+    }
+  });
 
   document.addEventListener("click", (event) => {
     const isClickInsideSidebar = sidebarContainer.contains(event.target);
     const isClickOnIcon = iconIsActive.contains(event.target);
     const sidebarContainerActiveDiv = document.querySelector(".sidebar-container-active");
 
-    if (!isClickInsideSidebar && !isClickOnIcon) {
+    if (!isClickInsideSidebar && !isClickOnIcon && sidebarContainerActiveDiv) {
       sidebarContainerActiveDiv.classList.remove("sidebar-container-active");
       sidebarContainerActiveDiv.classList.add("sidebar-container-disabled");
       setTimeout(() => {
-
         state.setIsActive(false);
-
       }, 1000);
     }
   });
