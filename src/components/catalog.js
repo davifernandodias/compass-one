@@ -8,10 +8,12 @@ export function Catalog() {
           <div class="catalog-cards">
             <div class="catalog-items">
               <div class="catalog-item">
-                <div class="catalog-card card-primary">
+                <a href="https://compass-second.vercel.app/">
+                  <div class="catalog-card card-primary">
                   <h1>Casual</h1>
                   <img src="assets/images/catalog/catalog_person_white_gray.webp" alt="Casual">
                 </div>
+                </a>
                 <div class="catalog-card card-second">
                   <h1>Formal</h1>
                   <img src="assets/images/catalog/catalog_person_blaze.webp" alt="Formal">
