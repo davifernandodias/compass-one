@@ -1,6 +1,7 @@
 export function cardProduct(product) {
   return `
     <div class="product-items">
+    <a href="https://compass-second.vercel.app/12">
       <div class="product-item">
         <img src="assets/images/clothes/${product.productNameImage}" alt="${product.productName} class="product-image"">
       </div>
@@ -23,6 +24,7 @@ export function cardProduct(product) {
           ${product.productDiscount ? `<span class="product-discount">-${product.productDiscount}%</span>` : ""}
         </div>
       </div>
+      </a>
     </div>
   `;
 }

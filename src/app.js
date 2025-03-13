@@ -25,6 +25,7 @@ function render() {
   initFeedbackSlider();
   initialRemoveNavabarSignUp();
   initialActiveSidebar();
+  addRedirectEvent();
 }
 
 setRenderCallback(render);
